@@ -1,0 +1,22 @@
+{
+  "name": "class-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"webpack --config web.config.js",
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.12"
+  }
+}
