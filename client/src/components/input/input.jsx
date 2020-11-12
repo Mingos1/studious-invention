@@ -17,12 +17,11 @@ class Input extends React.Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     // ? Does not mutate the array
     this.setState((prevState) => ({
       studentArray: [...prevState.studentArray, this.state.name],
     }));
-
-    event.preventDefault();
   }
 
   render() {
